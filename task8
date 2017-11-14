@@ -1,0 +1,39 @@
+import java.util.*;
+class Main {
+  static int Number1, Number2, operation1;
+public static void main(String[] args) {
+
+Scanner Num1 = new Scanner(System.in);
+System.out.println("input a Number");
+Number1  = Num1.nextInt();
+
+Scanner Num2 = new Scanner(System.in);
+System.out.println("input a second Number");
+Number2  = Num2.nextInt();
+
+Scanner Op1 = new Scanner(System.in);
+System.out.println("would you like to");
+System.out.println("1.add them together");
+System.out.println("2.subtract them");
+System.out.println("3.divide them ");
+System.out.println("4. multiply them together");
+System.out.println("Enter the number of the operation you want to do.");
+operation1  = Op1.nextInt();
+
+output();
+
+}
+public static void output(){
+  if (operation1 == 1)
+    System.out.println( Number1 + " + " + Number2 + " = " + (Number1 + Number2));
+  else if (operation1 == 2)
+    System.out.println( Number1 + " - " + Number2 + " = " + (Number1 - Number2));
+  else if (operation1 == 3)
+    System.out.println( Number1 + " % " + Number2 + " " + (Number1 / Number2));
+  else if (operation1 == 4 )
+    System.out.println( Number1 + " x " + Number2 + " = " + (Number1 * Number2));
+  
+  
+  
+}
+}
