@@ -1,0 +1,17 @@
+import java.util.*;
+class Main {
+public static void main(String[] args) {
+
+ int y = 0 ;
+Scanner NewMax = new Scanner(System.in);
+System.out.println("enter a number to count up to");
+  int x = NewMax.nextInt();
+
+
+ while (y < x) {
+   y++;
+   System.out.println(y);
+ }
+
+}
+}
